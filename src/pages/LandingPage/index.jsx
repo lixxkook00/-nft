@@ -42,7 +42,7 @@ export default function LandingPage({isLoading}) {
 
   return (
     <div className={`landing-page ${isLoading ? "height-100vh" : ""} `}>
-         <div className="header-wrap hidden-m ">
+         <div className="header-wrap hidden-m hidden-tl">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-12 position-relative">

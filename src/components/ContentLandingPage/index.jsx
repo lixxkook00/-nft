@@ -223,7 +223,7 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
 
   return (
     <>
-       <div className="header-mobile-wrap hide-on-pc hidden-tl">
+       <div className="header-mobile-wrap hide-on-pc">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-12">
@@ -425,11 +425,11 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
         <div className="about" >
             <div className="container">
                 <div className="row">  
-                    <div className="col-xl-6">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                         <img src="/images/Artboard 1302.png" alt="" />
                     </div>
 
-                    <div className="col-xl-6 centering pd-0-30">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 centering pd-0-30">
                         <span className="span-large ">
                             The Olympics are a worldwide sports 
                             festival that brings together excellent 
@@ -447,7 +447,7 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
         <div className="vision">
             <div className="container">
                 <div className="row">  
-                    <div className="col-xl-6 centering pd-0-30 to-column">
+                    <div className="col-xl-6 col-lg-6 col-md-6 centering pd-0-30 to-column">
                         <div className="second-btn mb-20">
                             Vision
                         </div>
@@ -455,7 +455,7 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
                             We hope to create a world of metaverse sports where no one is limited in their favorite sport, such as football, track and field, basketball, swimming, badminton, and so on, and to create E-Sport tournaments for the entire world using Web3 technology.
                         </span>
                     </div>
-                    <div className="col-xl-6">
+                    <div className="col-xl-6 col-lg-6 col-md-6">
                         <img src="/images/Artboard 1502.png" alt="" />
                     </div>
                 </div>
@@ -465,12 +465,12 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
         <div className="mission">
             <div className="container">
                 <div className="row">  
-                    <div className="col-xl-6 position-relative">
+                    <div className="col-xl-6 col-lg-6 col-md-6 position-relative">
                         {/* <img src="/images/Artboard 1702.png" alt="" /> */}
                         <Slider/>
                     </div>
                     
-                    <div className="col-xl-6 centering pd-0-30 to-column">
+                    <div className="col-xl-6 col-lg-6 col-md-6 centering pd-0-30 to-column">
                         <div className="second-btn mb-20">
                             Mission
                         </div>
@@ -581,42 +581,42 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
                     {/* circle chart */}
                     <div className="col-xl-12 mt-30">
                         <div className="row">
-                            <div className="col-xl-3 col-6">
+                            <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 10@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-6">
+                            <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 12@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-6">
+                            <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 14@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-6">
+                            <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 2@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-6">
+                            <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 4@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-6">
+                            <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 6@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-6">
+                            <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 8@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-6">
+                            <div className="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/pinksale-logo-text-white-445x128x0x1x445x125x1637349681.png" alt="" />
                                 </div>
@@ -630,11 +630,11 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
         <div className="mission height-600-mobile">
             <div className="container">
                 <div className="row">  
-                    <div className="col-xl-5">
+                    <div className="col-xl-5 col-lg-6 col-md-6 col-sm-6">
                         <img src="/images/Artboard 3@4x.png" alt="" />
                     </div>
 
-                    <div className="col-xl-7 centering pd-0-30 to-column">
+                    <div className="col-xl-7 col-lg-6 col-md-6 col-sm-6 centering pd-0-30 to-column">
                        <div className="row">
                            <div className="col-xl-12">
                                <img src="/images/Artboard 9602.png" alt="" />

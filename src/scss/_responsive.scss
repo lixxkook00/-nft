@@ -291,9 +291,9 @@
         }
     }
 
-    .slider-detail-pattern{
-        width: 120px !important;
-    }
+    // .slider-detail-pattern{
+    //     width: 120px !important;
+    // }
 }
 
 
@@ -317,6 +317,230 @@
         }
     }
 
+    .container.mt-100{
+        margin-top:0 !important;
+    }
+
+    .custom-col-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+
+    .member{
+        min-height: 440px !important;
+    }
+
+    .mission.height-600-mobile{
+        height: 500px
+    }
+    
+    .backer{
+        padding-bottom: 10px !important;
+    }
+
+    .footer-content-socials-item img {
+        height: 30px;
+    }
+
+    .slider-img{
+        width: 50%;
+        img{
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+    .slider-detail{
+        width: 50%;
+        height: 100% !important;
+    }
+
+    .slider-detail-text{
+        font-size: 20px;
+    }
+
+    .slider-detail-pattern{
+        width: 100% !important;
+    }
+    .slider-shoe{
+        width: 100% !important;
+    }
+
+    .span-large{
+        font-size: 18px !important;
+    }
+
+    .slider-detail-text-num{
+        left: -100% !important;
+    }
+
+    .backer{
+        padding-bottom: 50px !important;
+    }
+
+    .primary-btn {
+        margin-bottom: 50px;
+    }
+
+    .footer-content-text{
+        font-size: 16px !important;
+    }
+
+    .footer-content-socials-item img{
+        height: 28px !important;
+        width: auto !important;
+    }
+
+    .slider-detail-pattern{
+        flex: unset !important;
+        margin-top:0px !important;
+    }
+
+    .slider-detail-text{
+        font-size: 30px !important;
+        margin-bottom: 20px;
+    }
+
+    .slider-num.pattern-img{
+        height: 140px !important;
+    }
+
+    .slider-num{
+        overflow: hidden;
+        // width: 88%;
+        height: auto;
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-wrapper{
+            height: 100% !important;
+        }
+
+        .swiper-slide {
+            font-size: 18px;
+            background: $primary-blue;
+
+            height: 140px !important;
+            width: 140px !important;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 90%;
+            height: auto;
+            object-fit: cover;
+            // border-radius: 50%;
+        }
+    }
+
+    .slider-detail-text-num{
+        height: 140px !important;
+        width: 140px !important;
+        left: 0% !important;
+        top: -500% !important;
+        background-color: transparent !important;
+    }
+
+    .slider-detail-text-line{
+        left: -50% !important;
+        height: 57px !important;
+    }
+
+    .slider{
+        height: 400px !important;
+        .slider-num .swiper-slide{
+            height: 140px !important;
+            width: 140px !important;
+        }
+    }
+
+    .slider-detail-pattern{
+        margin-top: 20px !important;
+        width: 180px !important;
+        .slider-shoe .swiper-slide{
+            height: 140px !important;
+            width: 140px !important;
+        }
+    }
+
+
+    .swiper-slide img, .swiper-container img{
+        width: 100% !important;
+        // height: auto !important;
+    }
+
+    .slider-shoe{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 88%;
+        height: auto;
+        .swiper {
+            width: 140px !important;
+            height: 140px !important;
+            border-radius: 50%;
+        }
+
+        .swiper-wrapper{
+            height: 140px !important;
+            border-radius: 50%;
+        }
+
+        .swiper-slide {
+            font-size: 18px;
+            background: $primary-blue;
+
+            height: 140px !important;
+            width: 140px !important;
+            border-radius: 50%;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 90%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .title-nft{
+        margin-bottom: 120px;
+    }
 }
 
 
@@ -335,7 +559,99 @@
 /* Tablet to PC low resolution */
 
 @media (min-width: 985px) and (max-width: 1200px) {
-    
+    .shoe-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 400px !important;
+        }
+    }
+
+    .about{
+        height : 400px !important;
+
+        .col-xl-6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 400px;
+            }
+        }
+    }
+
+    .vision{
+        height: 600px !important;
+    }
+    .mission.height-600-mobile{
+        height: 450px;
+    }
+
+    .slider-detail-pattern{
+        width: 180px !important;
+    }
+
+    .slider-detail-pattern{
+        margin-top: 20px !important;
+        .slider-shoe .swiper-slide{
+            height: 180px !important;
+            width: 180px !important;
+        }
+    }
+
+    .slider-num.pattern-img{
+        height: 180px !important;
+    }
+
+    .slider-shoe{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 180px !important;
+        height: auto;
+        transform: scale(.9);
+        .swiper {
+            width: 180px !important;
+            height: 180px !important;
+            border-radius: 50%;
+        }
+
+        .swiper-wrapper{
+            height: 180px !important;
+            border-radius: 50%;
+        }
+
+        .swiper-slide {
+            font-size: 18px;
+            background: $primary-blue;
+
+            height: 180px !important;
+            width: 180px !important;
+            border-radius: 50%;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 90%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
 }
 
 /* > PC low resolution */

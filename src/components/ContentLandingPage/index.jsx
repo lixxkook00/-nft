@@ -303,27 +303,35 @@ export default function ContentLandingPage() {
                     {/* circle chart */}
                     <div className="col-xl-12 mt-30">
                         <div className="row">
-                            <div className="col-xl-4">
+                            <div className="col-xl-3">
                                 <div className="backer-outline">
                                 </div>
                             </div>
-                            <div className="col-xl-4">
+                            <div className="col-xl-3">
                                 <div className="backer-outline">
                                 </div>
                             </div>
-                            <div className="col-xl-4">
+                            <div className="col-xl-3">
                                 <div className="backer-outline">
                                 </div>
                             </div>
-                            <div className="col-xl-4">
+                            <div className="col-xl-3">
                                 <div className="backer-outline">
                                 </div>
                             </div>
-                            <div className="col-xl-4">
+                            <div className="col-xl-3">
                                 <div className="backer-outline">
                                 </div>
                             </div>
-                            <div className="col-xl-4">
+                            <div className="col-xl-3">
+                                <div className="backer-outline">
+                                </div>
+                            </div>
+                            <div className="col-xl-3">
+                                <div className="backer-outline">
+                                </div>
+                            </div>
+                            <div className="col-xl-3">
                                 <div className="backer-outline">
                                 </div>
                             </div>
@@ -337,7 +345,7 @@ export default function ContentLandingPage() {
             <div className="container">
                 <div className="row">  
                     <div className="col-xl-5">
-                        <img src="/images/Artboard 4702.png" alt="" />
+                        <img src="/images/v02.png" alt="" />
                     </div>
 
                     <div className="col-xl-7 centering pd-0-30 to-column">

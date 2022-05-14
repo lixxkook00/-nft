@@ -22,9 +22,7 @@ import {Pagination,Autoplay } from "swiper";
 
 // MUI
 import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
 import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 
 
@@ -115,7 +113,7 @@ const listNavItem = [
     },
 ]
 
-export default function ContentLandingPage({ntfRef}) {
+export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntfWhitepaper, executeScrollNTF, executeScrollAbout, executeScrollToken }) {
 
     const [indexShoePartActive,setIndexShoePartActive] = useState(0)
 
@@ -158,18 +156,44 @@ export default function ContentLandingPage({ntfRef}) {
                 </div>
             </div>
             <Divider />
+            <div className="tempty-title" onClick={() => executeScrollNTF()}>
+                <div className="nav-item">
+                    <div className="nav-item-name" >
+                        NFTs
+                    </div>
+                </div>
+            </div>
+
+            <div className="tempty-title" onClick={() => executeScrollAbout()}>
+                <div className="nav-item">
+                    <div className="nav-item-name" >
+                        About Project
+                    </div>
+                </div>
+            </div>
+
+            <div className="tempty-title" onClick={() => executeScrollToken()}>
+                <div className="nav-item">
+                    <div className="nav-item-name">
+                        Tokenomic
+                    </div>
+                </div>
+            </div>
+
             <div className="tempty-title">
-                {
-                    listNavItem.map((item,index) => {
-                        return (
-                            <div key={index} to={`/${item.id}`} className="nav-item">
-                                <div className="nav-item-name">
-                                    {item.title}
-                                </div>
-                            </div>
-                        )
-                    })
-                }
+                <div className="nav-item">
+                    <div className="nav-item-name">
+                        Whitepaper
+                    </div>
+                </div>
+            </div>
+
+            <div className="tempty-title">
+                <div className="nav-item">
+                    <div className="nav-item-name">
+                        Marketplace
+                    </div>
+                </div>
             </div>
         </Box>
     );
@@ -242,7 +266,7 @@ export default function ContentLandingPage({ntfRef}) {
                         </button>
                     </div>
 
-                    <div className="col-xl-5 mt-80">
+                    <div className="col-xl-5 mt-80" >
                         <div className="shoe-img">
                             <div className="shoe-bg"></div>
                             <img src="/images/Artboard 602.png" alt="" />
@@ -250,14 +274,14 @@ export default function ContentLandingPage({ntfRef}) {
                     </div>
 
                     {/* ----------- */}
-                    <div className="col-xl-12 mt-80 mb-30">
+                    <div className="col-xl-12 mt-80 mb-30 "  ref={ntfRef}>
                         <div className="title-nft">
                             NFTs
                         </div>
                     </div>
 
                     {/* slider shoes */}
-                    <div className="col-xl-12" ref={ntfRef}>
+                    <div className="col-xl-12" >
                         <div className="slider">
                             {/* main image */}
                             <div className="slider-img centering">
@@ -344,19 +368,19 @@ export default function ContentLandingPage({ntfRef}) {
                                                 <img src="/images/dƒy02.png" alt="" />
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <img src="/images/m  gi…y02.png" alt="" />
+                                                <img src="/images/mgi…y02.png" alt="" />
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <img src="/images/gขt02.png" alt="" />
+                                                <img src="/images/gut02.png" alt="" />
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <img src="/images/mũi02.png" alt="" />
+                                                <img src="/images/mui02.png" alt="" />
                                             </SwiperSlide>
                                             <SwiperSlide>
                                                 <img src="/images/logo02.png" alt="" />
                                             </SwiperSlide>
                                             <SwiperSlide>
-                                                <img src="/images/đế02.png" alt="" />
+                                                <img src="/images/de02.png" alt="" />
                                             </SwiperSlide>
                                         </Swiper>
                                     </div>
@@ -384,12 +408,12 @@ export default function ContentLandingPage({ntfRef}) {
                     </div>
 
                     {/* img */}
-                    <div className="col-xl-12">
+                    <div className="col-xl-12" >
                         <img src="/images/Artboard 1102.png" alt="" />
                     </div>
-
+                    
                     {/* primary title */}
-                    <div className="col-xl-12">
+                    <div className="col-xl-12" ref={ntfAbout}>
                         <div className="primary-title centering">
                             <img src="/images/Artboard 8302.png" alt="" className="primary-title-bg" />
                             <span>About Project</span>
@@ -398,7 +422,7 @@ export default function ContentLandingPage({ntfRef}) {
             </div>
         </div>
 
-        <div className="about">
+        <div className="about" >
             <div className="container">
                 <div className="row">  
                     <div className="col-xl-6">
@@ -458,7 +482,7 @@ export default function ContentLandingPage({ntfRef}) {
             </div>
         </div>
 
-        <div className="tokenomic">
+        <div className="tokenomic" ref={ntfTokenomic}>
             <div className="container">
                 <div className="row">
                      {/* primary title */}

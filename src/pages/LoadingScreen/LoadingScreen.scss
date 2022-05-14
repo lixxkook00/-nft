@@ -1,0 +1,28 @@
+@import '../../scss/variables';
+@import '../../scss/animations';
+
+.loading-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $primary-blue;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-logo{
+        height: 120px;
+        width: auto;
+        animation: up-and-down .5s infinite alternate;
+    }
+
+    &-loading{
+        height: 60px;
+        width: auto;
+    }
+}

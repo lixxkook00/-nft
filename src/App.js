@@ -18,7 +18,8 @@ function App() {
 
       {isLoading && <LoadingScreen/>}
 
-      <LandingPage />
+      <LandingPage isLoading={isLoading}/>
+      
     </div>
   );
 }

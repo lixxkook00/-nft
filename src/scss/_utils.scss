@@ -54,6 +54,11 @@ img{
     height: 100% !important;
 }
 
+.height-100vh{
+    height: 100vh !important;
+    overflow: hidden;
+}
+
 .centering{
     display: flex;
     justify-content: center;

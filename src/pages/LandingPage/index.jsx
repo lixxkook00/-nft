@@ -28,7 +28,7 @@ const listNavItem = [
     },
 ]
 
-export default function LandingPage() {
+export default function LandingPage({isLoading}) {
 
   const ntfRef = useRef(null);
   const ntfAbout = useRef(null);
@@ -41,8 +41,8 @@ export default function LandingPage() {
   const executeScrollWhitepaper = () => ntfWhitepaper.current.scrollIntoView({ behavior: "smooth" })    
 
   return (
-    <div className="landing-page">
-         <div className="header-wrap hidden-m">
+    <div className={`landing-page ${isLoading ? "height-100vh" : ""} `}>
+         <div className="header-wrap hidden-m ">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-12 position-relative">

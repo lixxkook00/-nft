@@ -1,0 +1,10 @@
+@import '../src/scss/variables';
+@import '../src/scss/utils';
+@import '../src/scss/responsive';
+@import '../src/scss/animations';
+
+*{
+  // background-color: $primary-blue;
+  box-sizing: border-box;
+  color: $white;
+}

@@ -1,0 +1,174 @@
+@import '../../scss/variables';
+
+.title{
+    font-size: 50px;
+    font-weight: 800;
+
+    &-nft{
+        text-align: center;
+        font-size: 90px;
+        font-weight: 800;
+        text-shadow: 0 0 3px #fff;
+    }
+}
+
+.span-large{
+    display: block;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 20px 0 10px;
+    text-align: justify ;
+}
+
+.shoe{
+    position: relative;
+
+    &-bg{
+        position: absolute;
+        top: calc(50% - 150px);
+        left: calc(50% - 150px);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        animation: ball-breathing 2s infinite alternate;
+    }
+
+    &-img{
+        height:100%;
+        display: flex;
+        align-items: center;
+        
+        img{
+            z-index: 1;
+            width: 100%;
+            height: auto;
+            background-color: transparent;
+            transition: all 0.5s ease-in-out;
+            animation: up-and-down 2s infinite alternate;
+        }
+    }
+}
+
+.slider{
+    display: flex;
+    height: 600px;
+
+    &-img{
+        flex: 1;
+
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &-detail{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        margin-top: 50px;
+        
+        &-controls{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .controls-left{
+                margin-right: 10px;
+            }
+
+            i{
+                font-size: 30px;
+                transition: all 0.5s ease-in-out;
+            }
+
+            i.active{
+                font-size: 40px;
+            }
+
+            i:hover{
+                cursor: pointer;
+                color: $primary-orange;
+            }
+        }
+
+        &-text{
+            font-size: 38px;
+            font-weight: 700;
+            position: relative;
+            background-color: transparent;
+
+            &-line{
+                position: absolute;
+                height: 100px;
+                width: auto;
+                top: 50%;
+                left: -55%;
+                background-color: transparent;
+            }
+
+            &-num{
+                position: absolute;
+                top: -130px;
+                left: 0;
+                font-size: 140px;
+                background-color: transparent;
+                opacity: .4;
+            }
+        }
+
+        &-pattern{
+            width: 64%;
+            position: relative;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 140px;
+
+            img{
+                width: 88%;
+                height: auto;
+            }
+
+            .pattern-border{
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                transition: all 2s ease-in-out;
+                background-color: transparent;
+                animation: rotate 10s infinite;
+            }
+        }
+    }
+}
+
+.paragraph{
+    display: block;
+    margin: 64px 0;
+    padding: 0 20px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 41px;
+    text-align: center;
+}
+
+.about{
+    background-image: url('../../../public/images/Artboard 4202.png');
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.vision{
+    background-color: $primary-light-blue;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}

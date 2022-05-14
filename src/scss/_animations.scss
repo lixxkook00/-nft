@@ -1,0 +1,100 @@
+@import './variables';
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 4px $primary-orange,
+      0 0 10px $primary-orange,
+      0 0 12px $primary-orange,
+      0 0 18px $primary-orange,
+      0 0 20px $primary-orange;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+@keyframes border-breathing{
+    0%{
+        box-shadow: 0 0 0.01rem #fff,
+            0 0 0.01rem #fff,
+            0 0 0.01rem $primary-orange,
+            0 0 0.01rem $primary-orange,
+            0 0 0.01rem $primary-orange,
+            inset 0 0 0.01rem $primary-orange; 
+    }
+
+    100%{
+        box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 1rem $primary-orange,
+            0 0 0.8rem $primary-orange,
+            0 0 0.8rem $primary-orange,
+            inset 0 0 0.3rem $primary-orange; 
+    }
+}
+
+@keyframes ball-breathing{
+    0% {
+        box-shadow:
+            inset 0 0 50px #fff,
+            inset 20px 0 10px $primary-orange,
+            inset -20px 0 10px #0ff,
+            inset 20px 0 300px $primary-orange,
+            inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 10px $primary-orange,
+            10px 0 10px #0ff;
+    }
+
+    100%{
+        box-shadow:
+            inset 0 0 50px #fff,
+            inset 20px 0 80px $primary-orange,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px $primary-orange,
+            inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 80px $primary-orange,
+            10px 0 80px #0ff;
+    }
+}
+
+@keyframes up-and-down {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+//   25% {
+//     -webkit-transform: translate(-50%, -50%) rotate(90deg);
+//             transform: translate(-50%, -50%) rotate(90deg);
+//   }
+//   50% {
+//     -webkit-transform: translate(-50%, -50%) rotate(180deg);
+//             transform: translate(-50%, -50%) rotate(180deg);
+//   }
+//   75% {
+//     -webkit-transform: translate(-50%, -50%) rotate(270deg);
+//             transform: translate(-50%, -50%) rotate(270deg);
+//   }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

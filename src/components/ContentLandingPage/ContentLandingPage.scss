@@ -170,6 +170,13 @@
     background-size: cover;
 }
 
+.roadmap .container .col-xl-12:last-child{
+    background-image: url('../../../public/images/Artboard 4002.png');
+    background-size: contain;
+}
+
+
+
 .vision{
     background-color: $primary-light-blue;
 }

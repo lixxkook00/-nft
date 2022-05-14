@@ -16,12 +16,12 @@ export default function CircleChart() {
             indexLabelFontSize: 26,
             yValueFormatString: "#'%'",
             dataPoints: [
+                { name: "Aridrop", y: 2 },
                 { name: "Pool Reward", y: 40 },
                 { name: "Presale", y: 25 },
-                { name: "Aridrop", y: 2 },
                 { name: "Liquid", y: 25 },
                 { name: "Marketing", y: 3 },
-                { name: "Team", y: 5 }
+                { name: "Team", y: 5 },
             ]
         }]
     }

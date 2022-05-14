@@ -8,3 +8,23 @@
   box-sizing: border-box;
   color: $white;
 }
+
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide,.swiper-container{
+  height: 700px !important;
+  width: auto;
+
+  img{
+    height: 100%;
+    width: auto;
+  }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom: 30px !important;
+  z-index: 2;
+}

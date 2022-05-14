@@ -1,6 +1,8 @@
 import React from 'react'
+
 import './ContentLandingPage.scss'
 
+import Slider from '../Slider'
 import CircleChart from '../CircleChart'
 
 const memberList = [
@@ -185,10 +187,11 @@ export default function ContentLandingPage() {
         <div className="mission">
             <div className="container">
                 <div className="row">  
-                    <div className="col-xl-6">
-                        <img src="/images/Artboard 1702.png" alt="" />
+                    <div className="col-xl-6 position-relative">
+                        {/* <img src="/images/Artboard 1702.png" alt="" /> */}
+                        <Slider/>
                     </div>
-
+                    
                     <div className="col-xl-6 centering pd-0-30 to-column">
                         <div className="second-btn mb-20">
                             Mission

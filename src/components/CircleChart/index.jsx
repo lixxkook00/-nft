@@ -6,7 +6,7 @@ export default function CircleChart() {
     let customY = ""
     const options = {
         animationEnabled: true,
-        backgroundColor: "#0F103B",
+        backgroundColor: "#0c205c",
         data: [{
             type: "doughnut",
             showInLegend: false,

@@ -31,6 +31,11 @@ export default function Slider() {
             >
             <SwiperSlide>
                 <a href="">
+                <img src="/images/demo app - login-02.png"/>
+                </a>
+            </SwiperSlide>
+            <SwiperSlide>
+                <a href="">
                 <img src="/images/demo app - market-02.png"/>
                 </a>
             </SwiperSlide>

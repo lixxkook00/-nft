@@ -15,10 +15,10 @@ export default function Footer() {
                             <a href="https://twitter.com/WorldStepAnn" className="footer-content-socials-item">
                                 <img src="/images/Artboard 3802.png" alt="" />
                             </a>
-                            <a href="http://dsc.gg/worldstep" className="footer-content-socials-item">
+                            <a href="https://t.me/WorldStepOfficial" className="footer-content-socials-item">
                                 <img src="/images/Artboard 3602.png" alt="" />
                             </a>
-                            <a href="https://t.me/WorldStepOfficia" className="footer-content-socials-item">
+                            <a href="http://dsc.gg/worldstep" className="footer-content-socials-item">
                                 <img src="/images/Artboard 3402.png" alt="" />
                             </a>
                             <a href="https://t.me/WorldStepOfficialAnnouncement" className="footer-content-socials-item">

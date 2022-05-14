@@ -31,7 +31,7 @@ export default function Header({executeScroll}) {
         executeScroll()
     }
   return (
-   <div className="header-wrap">
+   <div className="header-wrap hidden-m">
         <div className="container">
             <div className="row">
                 <div className="col-xl-12 position-relative">

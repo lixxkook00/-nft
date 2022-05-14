@@ -31,7 +31,7 @@ const memberList = [
         avt:"selina02.png",
         name:"Selina",
         position:"FOUNDER, CMO",
-        desc:"BExpert in marketing and digital strategies for 3 years. Passionate in stocks and crypto growing up."
+        desc:"Expert in marketing and digital strategies for 3 years. Passionate in stocks and crypto growing up."
     },
     {
         avt:"Blake02.png",
@@ -174,7 +174,7 @@ export default function ContentLandingPage({ntfRef}) {
                                     <img src="/images/Artboard 8102.png" alt="" className="slider-detail-text-line" />
                                     <div className="slider-detail-text-num">
                                        {/* slide num */}
-                                        <div className="slider-num pattern-img">
+                                        <div className="slider-num pattern-img ">
                                             <Swiper
                                                 modules={[Pagination,Autoplay]}
                                                 slidesPerView={1}
@@ -213,9 +213,9 @@ export default function ContentLandingPage({ntfRef}) {
                                 </div>
 
                                 {/* pattern */}
-                                <div className="slider-detail-pattern">
+                                <div className="slider-detail-pattern hidden-m">
                                     {/* slide pattern */}
-                                    <div className="slider-shoe pattern-img">
+                                    <div className="slider-shoe pattern-img ">
                                         <Swiper
                                             modules={[Pagination,Autoplay]}
                                             slidesPerView={1}
@@ -331,7 +331,7 @@ export default function ContentLandingPage({ntfRef}) {
         <div className="mission">
             <div className="container">
                 <div className="row">  
-                    <div className="col-xl-6 position-relative">
+                    <div className="col-xl-6 position-relative hidden-m">
                         {/* <img src="/images/Artboard 1702.png" alt="" /> */}
                         <Slider/>
                     </div>
@@ -444,42 +444,42 @@ export default function ContentLandingPage({ntfRef}) {
                     {/* circle chart */}
                     <div className="col-xl-12 mt-30">
                         <div className="row">
-                            <div className="col-xl-3">
+                            <div className="col-xl-3 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 10@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3">
+                            <div className="col-xl-3 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 12@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3">
+                            <div className="col-xl-3 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 14@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3">
+                            <div className="col-xl-3 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 2@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3">
+                            <div className="col-xl-3 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 4@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3">
+                            <div className="col-xl-3 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 6@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3">
+                            <div className="col-xl-3 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/Artboard 8@4x.png" alt="" />
                                 </div>
                             </div>
-                            <div className="col-xl-3">
+                            <div className="col-xl-3 col-6">
                                 <div className="backer-outline">
                                     <img src="/images/pinksale-logo-text-white-445x128x0x1x445x125x1637349681.png" alt="" />
                                 </div>
@@ -490,11 +490,11 @@ export default function ContentLandingPage({ntfRef}) {
             </div>
         </div>
 
-        <div className="mission">
+        <div className="mission height-600-mobile">
             <div className="container">
                 <div className="row">  
                     <div className="col-xl-5">
-                        <img src="/images/v02.png" alt="" />
+                        <img src="/images/Artboard 3@4x.png" alt="" />
                     </div>
 
                     <div className="col-xl-7 centering pd-0-30 to-column">
@@ -502,10 +502,10 @@ export default function ContentLandingPage({ntfRef}) {
                            <div className="col-xl-12">
                                <img src="/images/Artboard 9602.png" alt="" />
                            </div>
-                           <div className="col-xl-6">
+                           <div className="col-xl-6 col-6 mt-10">
                                <img src="/images/Artboard 2802.png" alt="" />
                            </div>
-                           <div className="col-xl-6">
+                           <div className="col-xl-6 col-6 mt-10">
                                <img src="/images/Artboard 3102.png" alt="" />
                            </div>
                        </div>
@@ -513,8 +513,6 @@ export default function ContentLandingPage({ntfRef}) {
                 </div>
             </div>
         </div>
-
-        
     </>
   )
 }

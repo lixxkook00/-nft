@@ -98,3 +98,13 @@
             transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+@keyframes showFromLeft{
+    0%{
+        transform: translateX(-100%)
+    }
+
+     0%{
+        transform: translateX(0)
+    }
+}

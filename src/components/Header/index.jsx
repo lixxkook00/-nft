@@ -25,7 +25,11 @@ const listNavItem = [
 ]
 
 
-export default function Header() {
+export default function Header({executeScroll}) {
+
+    const handleToNft = () => {
+        executeScroll()
+    }
   return (
    <div className="header-wrap">
         <div className="container">
@@ -39,7 +43,7 @@ export default function Header() {
                             {
                                 listNavItem.map((item,index) => {
                                     return (
-                                            <div className="header-nav-item">
+                                            <div key={index} className="header-nav-item">
                                                 {item.title}
                                             </div>
                                     )

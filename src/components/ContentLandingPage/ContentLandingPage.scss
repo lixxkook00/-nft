@@ -73,6 +73,7 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            z-index: 2;
 
             .controls-left{
                 margin-right: 10px;
@@ -98,6 +99,7 @@
             font-weight: 700;
             position: relative;
             background-color: transparent;
+            z-index: 2;
 
             &-line{
                 position: absolute;
@@ -112,9 +114,11 @@
                 position: absolute;
                 top: -130px;
                 left: 0;
+                height: 200px;
+                width: 200px;
                 font-size: 140px;
                 background-color: transparent;
-                opacity: .4;
+                z-index: -1;
             }
         }
 
@@ -126,6 +130,8 @@
             align-items: center;
             justify-content: center;
             margin-top: 140px;
+            transition: all 0.5s ease-in-out;
+
 
             img{
                 width: 88%;
@@ -225,16 +231,69 @@
         width: 100%;
         border: 2px solid $primary-orange;
         border-radius: 18px;
-        padding: 20px;
+        padding: 10px;
         margin-top: 40px;
         box-shadow: 0 0 3px $primary-orange, 0 0 5px $primary-orange, 0 0 20px $primary-orange, 0 0 4px $primary-orange;
         background-color: #3E2237;
         transition: all 0.5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
 
         &:hover{
             cursor: pointer;
             transform: scale(1.005);
             box-shadow: 0 0 3px $primary-orange, 0 0 5px $primary-orange, 0 0 20px $primary-orange, 0 0 20px $primary-orange;
         }
+    }
+}
+
+
+.slider-num{
+    overflow: hidden;
+    // width: 88%;
+    height: auto;
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-wrapper{
+        height: 100% !important;
+    }
+
+    .swiper-slide {
+        font-size: 18px;
+        background: $primary-blue;
+
+        height: 200px !important;
+        width: 200px !important;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+        // border-radius: 50%;
     }
 }

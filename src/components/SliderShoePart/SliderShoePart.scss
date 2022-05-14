@@ -1,0 +1,46 @@
+@import '../../scss/variables';
+
+.slider-shoe{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 88%;
+    height: auto;
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-wrapper{
+        height: 100% !important;
+    }
+
+    .swiper-slide {
+        font-size: 18px;
+        background: $primary-blue;
+
+        height: 238.8px !important;
+        width: 238.8px !important;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}

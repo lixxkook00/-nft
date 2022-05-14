@@ -13,7 +13,7 @@ export default function CircleChart() {
             indexLabel: `{name}: {y}`,
             indexLabelFontColor:"#fff",
             indexLabelFontWeight: "bold",
-            indexLabelFontSize: 26,
+            indexLabelFontSize: 16,
             yValueFormatString: "#'%'",
             dataPoints: [
                 { name: "Aridrop", y: 2 },

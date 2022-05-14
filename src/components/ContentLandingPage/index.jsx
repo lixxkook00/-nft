@@ -20,6 +20,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import {Pagination,Autoplay } from "swiper";
 
 
+// MUI
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+
+
 const memberList = [
     {
         avt:"samuel02.png",
@@ -84,12 +92,87 @@ const showPartList = [
     },
 ]
 
+const listNavItem = [
+    {
+        title:"NFTs",
+        href:"",
+    },
+    {
+        title:"About Project",
+        href:"",
+    },
+    {
+        title:"Tokenomic",
+        href:"",
+    },
+    {
+        title:"Whitepaper",
+        href:"",
+    },
+    {
+        title:"Marketplace",
+        href:"",
+    },
+]
+
 export default function ContentLandingPage({ntfRef}) {
 
     const [indexShoePartActive,setIndexShoePartActive] = useState(0)
 
     const swiperPattern = useRef(null);
     const swiperNum = useRef(null);
+
+    // Handle Modal Cart Nav
+    const [stateNav, setStateNav] = React.useState({
+        top: false,
+        left: false,
+        bottom: false,
+        right: false,
+    });
+
+    const toggleDrawerNav = (anchor, open) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+            return;
+        }
+    
+        setStateNav({ ...stateNav, [anchor]: open });
+    };
+        
+    const modalCartNav = (anchor) => (
+        <Box
+          sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+          role="presentation"
+          onClick={toggleDrawerNav(anchor, false)}
+          onKeyDown={toggleDrawerNav(anchor, false)}
+        >
+            <div>
+                <div className="cart-title">
+                    <div className=" nav-logo">
+                       <img src="/images/Artboard 402.png" alt="" />
+                    </div>
+                    <div className="cart-title-close">
+                        <button className="clear-btn">
+                            <i className="fa-solid fa-circle-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <Divider />
+            <div className="tempty-title">
+                {
+                    listNavItem.map((item,index) => {
+                        return (
+                            <div key={index} to={`/${item.id}`} className="nav-item">
+                                <div className="nav-item-name">
+                                    {item.title}
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </Box>
+    );
 
     const handlePrevShoePart = () => {
         swiperPattern.current.swiper.slidePrev()
@@ -116,6 +199,33 @@ export default function ContentLandingPage({ntfRef}) {
 
   return (
     <>
+       <div className="header-mobile-wrap hide-on-pc hidden-tl">
+            <div className="container">
+                <div className="row">
+                    <div className="col-xl-12">
+                        <div className="header-mobile">
+                            <div className="header-mobile-logo">
+                                <img src="/images/Artboard 402.png" alt="" />
+                            </div>
+
+                            <div className="header-mobile-icon">
+                                <i className="fa-solid fa-bars" onClick={toggleDrawerNav('left', true)}></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+       {/* Modal Nav */}
+        <Drawer
+            anchor={'left'}
+            open={stateNav['left']}
+            onClose={toggleDrawerNav('left', false)}
+        >
+            {modalCartNav('left')}
+        </Drawer>
+
         <div className="container mt-100">
             <div className="row">
                 <div className="col-xl-7 mt-80">
@@ -213,7 +323,7 @@ export default function ContentLandingPage({ntfRef}) {
                                 </div>
 
                                 {/* pattern */}
-                                <div className="slider-detail-pattern hidden-m">
+                                <div className="slider-detail-pattern">
                                     {/* slide pattern */}
                                     <div className="slider-shoe pattern-img ">
                                         <Swiper
@@ -331,7 +441,7 @@ export default function ContentLandingPage({ntfRef}) {
         <div className="mission">
             <div className="container">
                 <div className="row">  
-                    <div className="col-xl-6 position-relative hidden-m">
+                    <div className="col-xl-6 position-relative">
                         {/* <img src="/images/Artboard 1702.png" alt="" /> */}
                         <Slider/>
                     </div>
@@ -378,9 +488,12 @@ export default function ContentLandingPage({ntfRef}) {
                         </div>
                     </div>
 
-                    {/* circle chart */}
-                    <div className="col-xl-12 mt-50 mb-80">
+                    <div className="col-xl-12 mt-50 mb-80 hidden-m">
                         <img src="/images/Artboard 8502.png" alt="" />
+                    </div>
+
+                    <div className="col-xl-12 hide-on-pc hidden-tl">
+                        <img src="/images/Artboard 6@4x-8.png" alt="" />
                     </div>
                 </div>
             </div>

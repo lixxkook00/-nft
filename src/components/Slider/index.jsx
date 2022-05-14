@@ -16,7 +16,7 @@ import { EffectFade, Navigation, Pagination,Autoplay } from "swiper";
 
 export default function Slider() {
   return (
-    <div className="height-100">
+    <div className="slider-mobile height-100">
         <Swiper
             modules={[EffectFade, Navigation, Pagination,Autoplay]}
             spaceBetween={30}
@@ -30,29 +30,29 @@ export default function Slider() {
             className="mySwiper"
             >
             <SwiperSlide>
-                <a href="">
+                
                 <img src="/images/demo app - login-02.png"/>
-                </a>
+                
             </SwiperSlide>
             <SwiperSlide>
-                <a href="">
+                
                 <img src="/images/demo app - market-02.png"/>
-                </a>
+                
             </SwiperSlide>
             <SwiperSlide>
-                <a href="">
+                
                 <img src="/images/demo app - info-02.png"/>
-                </a>
+                
             </SwiperSlide>
             <SwiperSlide>
-                <a href="">
+                
                 <img src="/images/demo app - home-02.png"/>
-                </a>
+                
             </SwiperSlide>
             <SwiperSlide>
-                <a href="">
+                
                 <img src="/images/demo app - Collections-02.png"/>
-                </a>
+                
             </SwiperSlide>
         </Swiper>
     </div>

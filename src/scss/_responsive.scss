@@ -46,7 +46,7 @@
     }
 
     .mission {
-        height: 406px !important;
+        height: 1106px !important;
 
         .second-btn{
             margin-top: 20px;
@@ -196,7 +196,7 @@
 
     .slider-detail-text-line{
         left: -100% !important;
-        height: 52px !important;
+        height: 57px !important;
     }
 
     .slider{
@@ -208,7 +208,7 @@
     }
 
     .slider-detail-pattern{
-        margin-top: 30px !important;
+        margin-top: 20px !important;
         .slider-shoe .swiper-slide{
             height: 100px !important;
             width: 100px !important;
@@ -219,6 +219,76 @@
         margin-bottom: 00px !important;
     }
 
+    .second-btn{
+        font-size: 35px !important;
+    }
+
+    .swiper-slide img, .swiper-container img{
+        width: 100% !important;
+        // height: auto !important;
+    }
+
+    .slider-mobile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet{
+        height: 14px !important;
+        width: 14px !important;
+    }
+
+    .slider-shoe{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 88%;
+        height: auto;
+        .swiper {
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 50%;
+        }
+
+        .swiper-wrapper{
+            height: 100px !important;
+            border-radius: 50%;
+        }
+
+        .swiper-slide {
+            font-size: 18px;
+            background: $primary-blue;
+
+            height: 100px !important;
+            width: 100px !important;
+            border-radius: 50%;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 90%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .slider-detail-pattern{
+        width: 120px !important;
+    }
 }
 
 

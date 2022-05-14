@@ -28,3 +28,121 @@
   bottom: 30px !important;
   z-index: 2;
 }
+
+.header-mobile-wrap{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $primary-blue;
+}
+
+.header-mobile{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 70px;
+  padding: 10px 0;
+  
+  &-logo{
+    height: 50px;
+    img{
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &-icon{
+    i{
+      font-size: 30px;
+      color: $primary-orange;
+    }
+  }
+
+}
+
+.nav-logo{
+    height: 36px;
+    img{
+        height: 100%;
+    }
+}
+
+.nav-item{
+    height: 60px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.353);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    // font-size: 60px;
+
+    &-icon{
+        font-size: 20px;
+        color: $primary-blue;
+        margin-right: 8px;
+        margin-left: 4px;
+        min-width: 30px;
+        img{
+          height: 100%;
+          width: auto !important;
+        }
+    }
+
+    &-name{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.cart-title-close button{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cart-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 80px;
+  border-bottom: 2px solid $primary-orange;
+
+  .nav-logo{
+    height: 80%;
+    
+    img{
+      width: auto !important;
+    }
+  }
+
+  &-close{
+    .clear-btn{
+      padding: 0;
+    }
+    i{
+      font-size: 24px;
+      color: $primary-orange;
+    }
+  }
+}
+
+.nav-item-name{
+  color: $primary-orange;
+  padding: 0 20px;
+  font-weight: 700;
+}
+
+.clear-btn {
+  background-color: unset;
+  border: none;
+}
+
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper{
+  background-color: $primary-blue !important;
+}
+
+.css-1hskriy{
+  width: 300px !important;
+}

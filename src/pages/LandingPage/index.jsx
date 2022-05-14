@@ -2,6 +2,7 @@ import React from 'react'
 import './LandingPage.scss'
 
 import Header from '../../components/Header'
+import Footer  from '../../components/Footer'
 import ContentLandingPage from '../../components/ContentLandingPage'
 
 export default function LandingPage() {
@@ -12,6 +13,7 @@ export default function LandingPage() {
 
         <ContentLandingPage />
 
+        <Footer />
     </div>
   )
 }

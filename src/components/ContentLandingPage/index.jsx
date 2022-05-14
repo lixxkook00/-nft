@@ -1,10 +1,45 @@
 import React from 'react'
 import './ContentLandingPage.scss'
 
+import CircleChart from '../CircleChart'
+
+const memberList = [
+    {
+        avt:"samuel02.png",
+        name:"Samuel",
+        position:"FOUNDER, CEO",
+        desc:"Branding specialist. Passionate in creating brands, building teams, creating value-driven projects.",
+    },
+    {
+        avt:"selina02.png",
+        name:"Selina",
+        position:"FOUNDER, CMO",
+        desc:"BExpert in marketing and digital strategies for 3 years. Passionate in stocks and crypto growing up."
+    },
+    {
+        avt:"Blake02.png",
+        name:"Blake",
+        position:"CO-FOUNDER, COMMUNITY LEAD",
+        desc:"More than 2 years experience in trading crypto, stocks and community building.",
+    },
+    {
+        avt:"Lux02.png",
+        name:"Lux",
+        position:"DEVELOPER",
+        desc:"Growing up with a passion in culture and community and development along crypto.",
+    },
+    {
+        avt:"Vincent02.png",
+        name:"Vincent",
+        position:"DEVELOPER",
+        desc:"4 years journey in system development. All started with a passion to create the difference.",
+    }
+]
+
 export default function ContentLandingPage() {
   return (
     <>
-        <div className="container">
+        <div className="container mt-100">
             <div className="row">
                 <div className="col-xl-7 mt-80">
                         <div className="title">
@@ -16,7 +51,7 @@ export default function ContentLandingPage() {
                             support on the BSC chain.
                         </span>
                         <button className="primary-btn mt-50">
-                            Download Now
+                            Coming Soon
                         </button>
                     </div>
 
@@ -100,6 +135,7 @@ export default function ContentLandingPage() {
                     </div>
             </div>
         </div>
+
         <div className="about">
             <div className="container">
                 <div className="row">  
@@ -146,14 +182,17 @@ export default function ContentLandingPage() {
             </div>
         </div>
 
-        <div className="about">
+        <div className="mission">
             <div className="container">
                 <div className="row">  
                     <div className="col-xl-6">
-                        <img src="/images/Artboard 1302.png" alt="" />
+                        <img src="/images/Artboard 1702.png" alt="" />
                     </div>
 
-                    <div className="col-xl-6 centering pd-0-30">
+                    <div className="col-xl-6 centering pd-0-30 to-column">
+                        <div className="second-btn mb-20">
+                            Mission
+                        </div>
                         <span className="span-large ">
                             The Olympics are a worldwide sports 
                             festival that brings together excellent 
@@ -163,6 +202,156 @@ export default function ContentLandingPage() {
                             earn where everyone, from athletes to 
                             their avid fans, can join in the same workout for good health and earn at the same time. more income from exercise, and that's why World Step was born.
                         </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="tokenomic">
+            <div className="container">
+                <div className="row">
+                     {/* primary title */}
+                    <div className="col-xl-12">
+                        <div className="primary-title centering">
+                            <img src="/images/Artboard 8302.png" alt="" className="primary-title-bg" />
+                            <span>Tokenomic</span>
+                        </div>
+                    </div>
+
+                    {/* circle chart */}
+                    <div className="col-xl-12 mt-50 mb-80">
+                        <CircleChart/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="roadmap">
+            <div className="container">
+                <div className="row">
+                     {/* primary title */}
+                    <div className="col-xl-12">
+                        <div className="primary-title centering">
+                            <img src="/images/Artboard 8302.png" alt="" className="primary-title-bg" />
+                            <span>Roadmap</span>
+                        </div>
+                    </div>
+
+                    {/* circle chart */}
+                    <div className="col-xl-12 mt-50 mb-80">
+                        <img src="/images/Artboard 8502.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="ourteam">
+            <div className="container">
+                <div className="row">
+                     {/* primary title */}
+                    <div className="col-xl-12">
+                        <div className="primary-title centering">
+                            <img src="/images/Artboard 8302.png" alt="" className="primary-title-bg" />
+                            <span>Our Team</span>
+                        </div>
+                    </div>
+
+                    {/* circle chart */}
+                    <div className="col-xl-12 mt-50 mb-80">
+                        <div className="custom-row">
+                            {/* member */}
+
+                            {
+                                memberList.map((member,index) => {
+                                    return (
+                                        <div key={index} className="custom-col-2">
+                                            <div className="member">
+                                                <div className="member-avt">
+                                                    <img src={`/images/${member.avt}`} alt="" />
+                                                </div>
+                                                <div className="member-name">
+                                                    {member.name}
+                                                </div>
+                                                <div className="member-position">
+                                                    {member.position}
+                                                </div>
+                                                <div className="member-desc">
+                                                    {member.desc}
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="backer">
+            <div className="container">
+                <div className="row">
+                     {/* primary title */}
+                    <div className="col-xl-12">
+                        <div className="primary-title centering">
+                            <img src="/images/Artboard 8302.png" alt="" className="primary-title-bg" />
+                            <span>Backer</span>
+                        </div>
+                    </div>
+
+                    {/* circle chart */}
+                    <div className="col-xl-12 mt-30">
+                        <div className="row">
+                            <div className="col-xl-4">
+                                <div className="backer-outline">
+                                </div>
+                            </div>
+                            <div className="col-xl-4">
+                                <div className="backer-outline">
+                                </div>
+                            </div>
+                            <div className="col-xl-4">
+                                <div className="backer-outline">
+                                </div>
+                            </div>
+                            <div className="col-xl-4">
+                                <div className="backer-outline">
+                                </div>
+                            </div>
+                            <div className="col-xl-4">
+                                <div className="backer-outline">
+                                </div>
+                            </div>
+                            <div className="col-xl-4">
+                                <div className="backer-outline">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="mission">
+            <div className="container">
+                <div className="row">  
+                    <div className="col-xl-5">
+                        <img src="/images/Artboard 4702.png" alt="" />
+                    </div>
+
+                    <div className="col-xl-7 centering pd-0-30 to-column">
+                       <div className="row">
+                           <div className="col-xl-12">
+                               <img src="/images/Artboard 9602.png" alt="" />
+                           </div>
+                           <div className="col-xl-6">
+                               <img src="/images/Artboard 2802.png" alt="" />
+                           </div>
+                           <div className="col-xl-6">
+                               <img src="/images/Artboard 3102.png" alt="" />
+                           </div>
+                       </div>
                     </div>
                 </div>
             </div>

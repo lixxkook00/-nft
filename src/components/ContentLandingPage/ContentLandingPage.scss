@@ -156,19 +156,78 @@
     text-align: center;
 }
 
-.about{
-    background-image: url('../../../public/images/Artboard 4202.png');
-    background-size: cover;
+.about,
+.mission,
+.vision{
     height: 600px;
-    width: 100%;
     display: flex;
     align-items: center;
-    background-color: transparent;
+}
+
+.about,
+.mission{
+    background-image: url('../../../public/images/Artboard 4202.png');
+    background-size: cover;
 }
 
 .vision{
     background-color: $primary-light-blue;
-    height: 600px;
-    display: flex;
-    align-items: center;
+}
+
+.mission{
+    height: 800px;
+}
+
+.member{
+    background-color: $primary-light-blue;
+    border-radius: 30px;
+    padding: 15px 20px;
+    text-align: center;
+    height: 361px;
+    transition: all 0.5s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.09); 
+    }
+
+    &-name{
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px 0 5px;
+    }
+
+    &-position{
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: $primary-orange;
+    }
+
+    &-desc{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+
+.backer{
+    padding: 40px 0 80px;
+
+    &-outline{
+        height: 200px;
+        width: 100%;
+        border: 2px solid $primary-orange;
+        border-radius: 18px;
+        padding: 20px;
+        margin-top: 40px;
+        box-shadow: 0 0 3px $primary-orange, 0 0 5px $primary-orange, 0 0 20px $primary-orange, 0 0 4px $primary-orange;
+        background-color: #3E2237;
+        transition: all 0.5s ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.005);
+            box-shadow: 0 0 3px $primary-orange, 0 0 5px $primary-orange, 0 0 20px $primary-orange, 0 0 20px $primary-orange;
+        }
+    }
 }

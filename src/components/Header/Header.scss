@@ -1,13 +1,24 @@
 @import '../../scss/variables';
 
+
+.header-wrap{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $primary-blue;
+    box-shadow: 0 5px 13px 24px $primary-blue;
+}
+
 .header{
     display: flex;
     align-items: center;
     color: $white;
-    height: 140px;
+    height: 120px;
     font-size: 19px;
     font-weight: 600;
-    margin-top: 20px;
+    padding-top: 5px;
     justify-content: space-between;
     background-color: $primary-blue;
 

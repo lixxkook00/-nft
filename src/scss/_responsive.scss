@@ -342,14 +342,6 @@
     // }
 }
 
-
-/* Mobile & Tablet */
-@media (max-width: 1023px) {
-    
-}
-
-
-
 /* Tablet Only */
 
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -588,10 +580,56 @@
         margin-bottom: 120px;
     }
 
-    
+    .slider-detail-text .slider-detail-text-line{
+        left: -38% !important;
+
+        &.lace{
+            height: 130px !important;
+            width: auto !important;
+            top: 40% !important;
+            left: -49% !important;
+        }
+
+        &.middle{
+            height: 130px !important;
+            width: 359px !important;
+            top: 28% !important;
+            left: -106% !important;
+        }
+
+        &.heel{
+            height: 121px !important;
+            left: -147% !important;
+            top: 65% !important;
+            width: 506px !important;
+            transform: rotate(-4deg) !important;
+        }
+
+
+        &.toe{
+            height: 153px !important;
+            width: auto !important;
+            top: 37% !important;
+            left: -24% !important;
+        }
+
+        &.tongue{
+            height: 128px !important;
+            width: 332px !important;
+            top: -87% !important;
+            left: -96% !important;
+            transform: rotate(15deg);
+        }
+
+        &.sole{
+            height: 239px !important;
+            width: auto !important;
+            top: 31% !important;
+            left: -47% !important;
+        }
+    }
 
 }
-
 
 
 @media (min-width: 992px){
@@ -602,7 +640,6 @@
     }
     
 }
-
 
 
 /* Tablet to PC low resolution */
@@ -699,6 +736,53 @@
             height: auto;
             object-fit: cover;
             border-radius: 50%;
+        }
+    }
+
+    .slider-detail-text-line{
+        left: -75% !important;
+
+        &.lace{
+            height: 191px !important;
+            width: auto !important;
+            top: 40% !important;
+            left: -70% !important;
+        }
+    
+        &.middle{
+            height: 192px !important;
+            width: 369px !important;
+            top: 40% !important;
+            left: -123% !important;
+        }
+    
+        &.heel{
+            height: 121px !important;
+            left: -171% !important;
+            top: 109% !important;
+            width: 528px !important;
+            transform: rotate(-10deg) !important;
+        }
+    
+        &.toe{
+            height: 285px !important;
+            width: auto !important;
+            top: 13% !important;
+            left: -50% !important;
+        }
+    
+        &.tongue{
+            height: 128px !important;
+            width: 369px !important;
+            top: 26% !important;
+            left: -124% !important;
+        }
+    
+        &.sole{
+            height: 365px !important;
+            width: auto !important;
+            top: 31% !important;
+            left: -84% !important;
         }
     }
 }

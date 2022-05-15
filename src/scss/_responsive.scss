@@ -291,6 +291,51 @@
         }
     }
 
+    .slider-detail-text-line{
+
+        &.lace{
+            height: 96px !important;
+            width: auto !important;
+            top: 40% !important;
+            left: -81% !important;
+        }
+    
+        &.middle{
+            height: 103px !important;
+            width: 160px !important;
+            top: 14% !important;
+            left: -123% !important;
+        }
+    
+        &.heel{
+            height: 128px !important;
+            width: 204px !important;
+            top: 4% !important;
+            left: -168% !important;
+        }
+    
+        &.toe{
+            height: 133px !important;
+            width: auto !important;
+            top: 28% !important;
+            left: -54% !important;
+        }
+    
+        &.tongue{
+            height: 71px !important;
+            width: 163px !important;
+            top: 44% !important;
+            left: -124% !important;
+        }
+    
+        &.sole{
+            height: 157px !important;
+            width: auto !important;
+            top: 31% !important;
+            left: -84% !important;
+        }
+    }
+
     // .slider-detail-pattern{
     //     width: 120px !important;
     // }
@@ -541,6 +586,9 @@
     .title-nft{
         margin-bottom: 120px;
     }
+
+    
+
 }
 
 

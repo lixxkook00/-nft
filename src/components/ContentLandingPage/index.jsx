@@ -305,7 +305,22 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
                                     
                                     {showPartList[indexShoePartActive].name}
 
-                                    <img src="/images/Artboard 8102.png" alt="" className="slider-detail-text-line" />
+                                    {/* text line to part */}
+
+                                    {indexShoePartActive === 0 && <img src="/images/Artboard 8102.png" alt="" className="slider-detail-text-line" />}
+
+                                    {indexShoePartActive === 1 && <img src="/images/dƒy_102.png" alt="" className="slider-detail-text-line lace" />}
+                                    
+                                    {indexShoePartActive === 2 && <img src="/images/gat_102.png" alt="" className="slider-detail-text-line middle" />}
+
+                                    {indexShoePartActive === 3 && <img src="/images/logo_102.png" alt="" className="slider-detail-text-line heel" />}
+
+                                    {indexShoePartActive === 4 && <img src="/images/mũi_102.png" alt="" className="slider-detail-text-line toe" />}
+
+                                    {indexShoePartActive === 5 && <img src="/images/gat_102.png" alt="" className="slider-detail-text-line tongue" />}
+
+                                    {indexShoePartActive === 6 && <img src="/images/mgay_102.png" alt="" className="slider-detail-text-line sole" />}
+
                                     <div className="slider-detail-text-num">
                                        {/* slide num */}
                                         <div className="slider-num pattern-img ">
@@ -386,8 +401,6 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
                                     </div>
                                     <img src="/images/Artboard 6602.png" alt="" className="pattern-border" />
                                 </div>
-
-                                
                             </div>
                         </div>
                     </div>

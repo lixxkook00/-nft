@@ -108,6 +108,47 @@
                 top: 50%;
                 left: -55%;
                 background-color: transparent;
+
+                &.lace{
+                    height: 208px;
+                    width: auto;
+                    top: 40%;
+                }
+
+                &.middle{
+                    height: 223px;
+                    width: 425px;
+                    top: 14%;
+                    left: -104%;
+                }
+
+                &.heel{
+                    height: 240px;
+                    width: 577px;
+                    top: -1%;
+                    left: -139%;
+                }
+
+                &.toe{
+                    height: 277px;
+                    width: auto;
+                    top: 28%;
+                    left: -35%;
+                }
+
+                &.tongue{
+                    height: 125px;
+                    width: auto;
+                    top: 21%;
+                    left: -99%;
+                }
+
+                &.sole{
+                    height: 325px;
+                    width: auto;
+                    top: 31%;
+                    left: -55%;
+                }
             }
 
             &-num{

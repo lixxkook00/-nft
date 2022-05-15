@@ -313,7 +313,7 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
                                     
                                     {indexShoePartActive === 2 && <img src="/images/gat_102.png" alt="" className="slider-detail-text-line middle" />}
 
-                                    {indexShoePartActive === 3 && <img src="/images/logo_102.png" alt="" className="slider-detail-text-line heel" />}
+                                    {indexShoePartActive === 3 && <img src="/images/gat_102.png" alt="" className="slider-detail-text-line heel" />}
 
                                     {indexShoePartActive === 4 && <img src="/images/mui_102.png" alt="" className="slider-detail-text-line toe" />}
 

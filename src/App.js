@@ -1,7 +1,10 @@
 import './App.scss';
 import {useState,useEffect} from 'react'
+
+// pages
 import LandingPage from './pages/LandingPage'
 import LoadingScreen from './pages/LoadingScreen';
+import Marketplace from './pages/Marketplace'
 
 function App() {
 
@@ -20,6 +23,7 @@ function App() {
 
       <LandingPage isLoading={isLoading}/>
       
+      {/* <Marketplace /> */}
     </div>
   );
 }

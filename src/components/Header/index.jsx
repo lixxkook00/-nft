@@ -27,9 +27,6 @@ const listNavItem = [
 
 export default function Header({executeScroll}) {
 
-    const handleToNft = () => {
-        executeScroll()
-    }
   return (
    <div className="header-wrap hidden-m">
         <div className="container">

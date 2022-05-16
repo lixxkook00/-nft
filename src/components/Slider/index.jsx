@@ -31,27 +31,27 @@ export default function Slider() {
             >
             <SwiperSlide>
                 
-                <img src="/images/demo app - login-02.png"/>
+                <img alt="description" src="/images/demo app - login-02.png"/>
                 
             </SwiperSlide>
             <SwiperSlide>
                 
-                <img src="/images/demo app - market-02.png"/>
+                <img alt="description" src="/images/demo app - market-02.png"/>
                 
             </SwiperSlide>
             <SwiperSlide>
                 
-                <img src="/images/demo app - info-02.png"/>
+                <img alt="description" src="/images/demo app - info-02.png"/>
                 
             </SwiperSlide>
             <SwiperSlide>
                 
-                <img src="/images/demo app - home-02.png"/>
+                <img alt="description" src="/images/demo app - home-02.png"/>
                 
             </SwiperSlide>
             <SwiperSlide>
                 
-                <img src="/images/demo app - Collections-02.png"/>
+                <img alt="description" src="/images/demo app - Collections-02.png"/>
                 
             </SwiperSlide>
         </Swiper>

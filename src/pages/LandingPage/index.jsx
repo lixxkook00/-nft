@@ -58,7 +58,7 @@ export default function LandingPage({isLoading}) {
                                   About Project
                                 </div>
                                 <div className="header-nav-item" onClick={() => executeScrollToken()}>
-                                  Tokenomic
+                                  Tokenomics
                                 </div>
                                 <div className="header-nav-item">
                                   Whitepaper

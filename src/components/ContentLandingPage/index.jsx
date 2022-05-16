@@ -4,7 +4,6 @@ import './ContentLandingPage.scss'
 
 import Slider from '../Slider'
 import CircleChart from '../CircleChart'
-import SliderShoePart from '../SliderShoePart'
 
 // Import Swiper styles
 import "swiper/css";
@@ -90,28 +89,28 @@ const showPartList = [
     },
 ]
 
-const listNavItem = [
-    {
-        title:"NFTs",
-        href:"",
-    },
-    {
-        title:"About Project",
-        href:"",
-    },
-    {
-        title:"Tokenomic",
-        href:"",
-    },
-    {
-        title:"Whitepaper",
-        href:"",
-    },
-    {
-        title:"Marketplace",
-        href:"",
-    },
-]
+// const listNavItem = [
+//     {
+//         title:"NFTs",
+//         href:"",
+//     },
+//     {
+//         title:"About Project",
+//         href:"",
+//     },
+//     {
+//         title:"Tokenomic",
+//         href:"",
+//     },
+//     {
+//         title:"Whitepaper",
+//         href:"",
+//     },
+//     {
+//         title:"Marketplace",
+//         href:"",
+//     },
+// ]
 
 export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntfWhitepaper, executeScrollNTF, executeScrollAbout, executeScrollToken }) {
 
@@ -201,7 +200,7 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
     const handlePrevShoePart = () => {
         swiperPattern.current.swiper.slidePrev()
         swiperNum.current.swiper.slidePrev()
-        if(indexShoePartActive == 0){
+        if(indexShoePartActive === 0){
             setIndexShoePartActive(6)
         }else{
             setIndexShoePartActive(indexShoePartActive-1)
@@ -213,7 +212,7 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
         swiperPattern.current.swiper.slideNext()
         swiperNum.current.swiper.slideNext()
 
-        if(indexShoePartActive == 6){
+        if(indexShoePartActive === 6){
             setIndexShoePartActive(0)
         }else{
             setIndexShoePartActive(indexShoePartActive+1)
@@ -502,7 +501,7 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
                     <div className="col-xl-12">
                         <div className="primary-title centering">
                             <img src="/images/Artboard 8302.png" alt="" className="primary-title-bg" />
-                            <span>Tokenomic</span>
+                            <span>Tokenomics</span>
                         </div>
                     </div>
 

@@ -2,6 +2,7 @@
 @import '../src/scss/utils';
 @import '../src/scss/animations';
 @import '../src/scss/responsive';
+@import '~react-pro-sidebar/dist/scss/styles.scss';
 
 *{
   // background-color: $primary-blue;
@@ -147,3 +148,7 @@
 .css-1hskriy{
   width: 300px !important;
 }
+
+// custom side bar Marketplace
+
+$sidebar-bg-color: $primary-blue;

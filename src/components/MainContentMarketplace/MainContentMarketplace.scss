@@ -1,0 +1,123 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/_animations.scss';
+
+.marketplace-content{
+    display: flex;
+    flex-direction: column;
+    // SEARCH BAR
+    &-search{
+        width: 650px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0 20px 30px;
+        background-color: $white;
+        height: 40px;
+        border-radius: 20px;
+        
+        input{
+            flex: 1;
+            color: $primary-blue;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        &-btn{
+            margin-right: 20px;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            &:hover i{
+                transform: scale(1.1);
+                color: $primary-orange;
+            }
+
+            i{
+                color: $primary-blue;
+                font-size: 22px;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+
+    // BANNER
+    &-banner{
+        margin: 50px 0;
+        height: 250px;
+        border-radius: 33px;
+        background-image: linear-gradient(90deg, #0AB1BB 10%, #04D1AA 90%);
+
+        &-img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+
+            img{
+                transition: all 1s ease-in-out;
+                animation: img-breathing 1s infinite alternate;
+            }
+        }
+
+        &-text{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-right: 30px;
+            text-align: justify;
+        }
+
+        &-title{
+            width: 100%;
+            font-weight: 600;
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        &-desc{
+            width: 100%;
+            font-size: 22px;
+        }
+    }
+
+    &-controls{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 20px;
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+
+        &-name{
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        &-btns{
+            display: flex;
+        }
+
+        &-btn{
+            padding: 6px 14px;
+            border-radius: 50%;
+            margin-right: 4px;
+            transition: all 0.5s ease-in-out;
+
+            &:hover{
+                cursor: pointer;
+                background-color: $primary-orange;
+            }
+        }
+    }
+
+    .content{
+        flex: 1;
+        overflow: scroll;
+    }
+}

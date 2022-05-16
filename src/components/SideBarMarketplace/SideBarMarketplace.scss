@@ -1,0 +1,72 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/_animations.scss';
+
+.marketplace-sidebar{
+    display: flex;
+    flex-direction: column;
+
+    &-logo{
+        padding-top: 20px;
+
+        img{
+            width: 50%;
+        }
+    }
+
+    &-main{
+        flex: 1;
+        overflow: scroll;
+
+    }
+
+    // custom react-pro-sidebar
+
+    .pro-sidebar{
+        width: 100%;
+        min-width: unset;
+        padding: 20px 0 0 30px;
+        background-color: $primary-blue;
+        z-index: 1;
+
+        .pro-inner-list-item,&-inner{
+            background-color: $primary-blue !important;
+        }
+
+        .pro-item-content{
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .pro-inner-item{
+            position: relative;
+            transition: all 0.2s ease-in-out;
+            margin: 10px 0;
+            
+            span{
+                transition: all 0.2s ease-in-out;
+            }
+
+            &:hover{
+                cursor: pointer;
+                background-color: $primary-orange;
+                margin-left: 8px;
+                border-top-left-radius: 40px;
+                border-bottom-left-radius: 40px;
+
+                span{
+                    transform: scale(1.01);
+                    font-weight: 700;
+                    color: $white;
+                }
+            }
+        }
+
+        .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item > div > ul{
+            padding: 4px 0;
+        }
+    }
+
+    .pro-sidebar-layout::-webkit-scrollbar {
+        display: none;
+    } 
+}

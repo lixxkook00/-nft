@@ -67,6 +67,16 @@
     }
 }
 
+@keyframes img-breathing{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.03);
+    }
+}
+
 @keyframes up-and-down {
     0%{
         transform: translateY(0);
@@ -92,7 +102,17 @@
         transform: translateX(-100%)
     }
 
-     0%{
+    100%{
         transform: translateX(0)
+    }
+}
+
+@keyframes growUpBorder{
+    0%{
+        scale: 0;
+    }
+
+    100%{
+        scale: 1;
     }
 }

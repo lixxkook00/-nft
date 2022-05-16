@@ -284,7 +284,7 @@ export default function ContentLandingPage({ ntfRef, ntfAbout, ntfTokenomic, ntf
                         <div className="slider">
                             {/* main image */}
                             <div className="slider-img centering">
-                                <img src="/images/Artboard 702.png" alt="" />
+                                <img src="/images/Artboard 702 copy.png" alt="" />
                             </div>
 
                             {/* detail */}

@@ -270,7 +270,9 @@
 
 .roadmap .container .col-xl-12:last-child{
     background-image: url('../../../public/images/Artboard 4002.png');
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
 }
 
 
@@ -388,4 +390,9 @@
         object-fit: cover;
         // border-radius: 50%;
     }
+}
+
+.col-xl-12.mt-50.mb-80.hidden-m{
+    background-image: url("../../../public/images/Artboard 4002.png");
+    background-size: cover;
 }

@@ -4,7 +4,12 @@ import './MainContentMarketplace.scss'
 import HeaderMarketplace from '../HeaderMarketplace'
 import ShoeCart from '../ShoeCart'
 
+import data from '../../data/data.json'
+
 export default function MainContentMarketplace() {
+
+  console.log(data.shoeList)
+
   return (
     <div className="marketplace-content">
         <div className="container">
@@ -73,9 +78,31 @@ export default function MainContentMarketplace() {
 
           <div className="container">
             <div className="row">
-              <div className="col-xl-3">
-                  <ShoeCart />
-              </div>
+                {
+                  data.shoeList.map((shoe,index) => {
+                    return (
+                      <div className="col-xl-3">
+                        <ShoeCart key={index} shoe={shoe}/>
+                      </div>
+                    )
+                  })
+                }
+            </div>
+          </div>
+
+          {/* paginations */}
+          <div className="marketplace-content-paginations">
+            <div className="pagination centering active">
+                1
+            </div>
+            <div className="pagination centering">
+                2
+            </div>
+            <div className="pagination centering">
+                3
+            </div>
+            <div className="pagination centering">
+                4
             </div>
           </div>
 

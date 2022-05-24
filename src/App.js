@@ -5,6 +5,9 @@ import {useState,useEffect} from 'react'
 import LandingPage from './pages/LandingPage'
 import LoadingScreen from './pages/LoadingScreen';
 import Marketplace from './pages/Marketplace'
+import MarketplaceDetail from './pages/MarketplaceDetail';
+
+import Routers from './routers/Routers'
 
 function App() {
 
@@ -19,11 +22,15 @@ function App() {
   return (
     <div className="App">
 
-      {isLoading && <LoadingScreen/>}
+      <Routers />
 
-      <LandingPage isLoading={isLoading}/>
+      {/* {isLoading && <LoadingScreen/>} */}
+
+      {/* <LandingPage isLoading={isLoading}/> */}
       
       {/* <Marketplace /> */}
+
+      {/* <MarketplaceDetail /> */}
     </div>
   );
 }

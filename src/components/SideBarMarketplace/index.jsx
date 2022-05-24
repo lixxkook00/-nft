@@ -1,6 +1,7 @@
 import React from 'react'
 import './SideBarMarketplace.scss'
 
+import {Link} from 'react-router-dom'
 
 import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
@@ -8,9 +9,9 @@ import 'react-pro-sidebar/dist/css/styles.css';
 export default function SideBartMarketplace() {
   return (
     <div className="marketplace-sidebar">
-        <div className="marketplace-sidebar-logo centering">
+        <Link to={"/"} className="marketplace-sidebar-logo centering">
             <img src="/images/Artboard 402.png" alt="" />
-        </div>
+        </Link>
 
         <div className="marketplace-sidebar-main">
             <ProSidebar>

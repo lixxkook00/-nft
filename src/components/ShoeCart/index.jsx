@@ -1,27 +1,30 @@
 import React from 'react'
 import './ShoeCart.scss'
 
-export default function ShoeCart() {
+import {Link} from 'react-router-dom'
+
+import CirclePercent from '../CirclePercent'
+
+export default function ShoeCart({shoe}) {
   return (
-    <div className="shoecart">
+    <Link to={`/market-place/${shoe.id}`} className="shoecart">
         <div className="shoecart-bg">
-            <img src="/images/backgroundCart.png" alt="" />
+            <img src={`/images/backgroundCart.png`} alt="" />
         </div>
 
         <div className="shoecart-content">
             <div className="shoecart-content-img">
-                <img src="/images/Artboard 4702.png" alt="" />
-                <div className="shoecart-content-img-bg"></div>
+                <img src={`/images/${shoe.img}`} alt="" />
             </div>
             <div className="shoecart-content-detail">
                 <div className="shoecart-content-detail-rate">
-
+                    <CirclePercent percent={shoe.ratePercent} rate={shoe.rateNum}/>
                 </div>
                 <div className="shoecart-content-detail-color">
-                    
+                    <img src={`/images/${shoe.background}`} alt="" />
                 </div>
             </div>
         </div>
-    </div>
+    </Link>
   )
 }

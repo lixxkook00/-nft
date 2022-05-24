@@ -1,0 +1,69 @@
+{
+    "shoeList":[
+        {
+            "id":"jamaica",
+            "img":"Artboard 4702.png",
+            "name":"JAMAICA",
+            "rateNum":"5",
+            "ratePercent":"72",
+            "background":"jam br.png"
+        },
+        {
+            "id":"netherlands",
+            "img":"halan.png",
+            "name":"Netherlands",
+            "rateNum":"5",
+            "ratePercent":"72",
+            "background":"ucbr1.png"
+        },
+        {
+            "id":"australia",
+            "img":"lc.png",
+            "name":"Australia",
+            "rateNum":"5",
+            "ratePercent":"72",
+            "background":"ucbr.png"
+        },
+        {
+            "id":"russia",
+            "img":"nga.png",
+            "name":"Russia",
+            "rateNum":"5",
+            "ratePercent":"72",
+            "background":"anh br.png"
+        },
+        {
+            "id":"england",
+            "img":"anh.png",
+            "name":"England",
+            "rateNum":"5",
+            "ratePercent":"72",
+            "background":"halanbr.png"
+        },
+        {
+            "id":"brazil",
+            "img":"brazil.png",
+            "name":"Brazil",
+            "rateNum":"5",
+            "ratePercent":"72",
+            "background":"brazil br.png"
+        },
+        {
+            "id":"american",
+            "img":"my.png",
+            "name":"American",
+            "rateNum":"5",
+            "ratePercent":"72",
+            "background":"mybr.png"
+        },
+        {
+            "id":"egypt",
+            "img":"aicap.png",
+            "name":"Egypt",
+            "rateNum":"5",
+            "ratePercent":"72",
+            "background":"aicapbr.png"
+        }
+
+    ]
+}

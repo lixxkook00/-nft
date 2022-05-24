@@ -1,0 +1,160 @@
+@import '../../scss/variables';
+
+.marketplace-detail{
+
+    .detail-infor{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: -12px;
+
+        &-text{
+            padding: 20px 0;
+
+            &-status{
+                color: $primary-yellow;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            &-name{
+                color: $white;
+                font-size: 26px;
+                font-weight: 700;
+            }
+        }
+
+        &-num{
+            flex: 1;
+            background-color: #151762;
+            border: 2px solid #060CFF;
+            padding: 30px 40px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+
+            &-title{
+                color: $white;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            &-value{
+                color: $primary-yellow;
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .process-bar{
+        margin-top: 20px;
+
+        &-title{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            &-name{
+                color: $white;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            &-value{
+                color: $white;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+        &-main{
+            height: 18px;
+            border-radius: 9px;
+            overflow: hidden;
+            margin: 5px 0 14px;
+
+            .css-eglki6-MuiLinearProgress-root{
+                height: 100%;
+            }
+
+            &.stamina{
+                .css-5xe99f-MuiLinearProgress-bar1:first-child{
+                    background-color: $primary-orange;
+                }
+            }
+
+            &.mana{
+                .css-5xe99f-MuiLinearProgress-bar1:first-child{
+                    background-color: #04D1AA;
+                }
+            }
+        }
+    }
+
+    .detail-control{
+        margin-top: 109px;
+    }
+
+    &-btn{
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 700;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        border: 5px solid #060CFF;
+        border-radius: 20px;
+        margin-bottom: 20px;
+
+        &--primary{
+            background-color: #060CFF;
+        }
+    }
+
+    .line{
+        padding: 15px 10px;
+        border-bottom: 1px dashed #78787B;
+
+        &-title{
+            font-size: 15px;
+        }
+
+        &-usd{
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        &-value{
+            color: #060CFF;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+
+    .back{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 180px;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: 600;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $primary-orange;
+        }
+
+        &:hover i{
+            transform: translateX(-5px) scale(1.4);
+        }
+
+        i{
+            padding: 0 10px;
+            font-size: 20px;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}

@@ -1,6 +1,21 @@
+@import '../../scss/variables';
+@import '../../scss/animations';
+
 .shoecart{
     margin: 20px 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    &:hover .shoecart-content-img img{
+        animation: wiggle .5s linear forwards;
+    }
 
     &-content{
         position: absolute;
@@ -13,18 +28,44 @@
         align-items: center;
 
         &-img{
-            width: 80%;
-            margin-top: 40px;
             position: relative;
+            width: 80%;
+            height: 60%;
+            margin-top: 11%;
+            margin-right: 15px;
+            border-radius: 10px;
+            background-color: $primary-light-orange;
 
-            &-bg{
+            img{
                 position: absolute;
-                top: 0;
+                bottom: 0;
                 left: 0;
-                height: 100px;
-                width: 100px;
-                background-color: #fff;
-                z-index: 0;
+                width: 112%;
+                height: auto;
+                transform: translate(-7%, 7%)
+            }
+        }
+
+        &-detail{
+            flex: 1;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 30px 30px 30px 20px;
+
+            &-rate{
+               height: 100%;
+               max-width: 40%;
+            }
+
+            &-color{
+                height: 60%;
+                max-width: 50%;
+                img{
+                    height: 100%;
+                    width: auto;
+                }
             }
         }
     }

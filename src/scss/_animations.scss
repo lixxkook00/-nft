@@ -116,3 +116,13 @@
         scale: 1;
     }
 }
+
+@keyframes wiggle {
+    0%{
+        transform: translate(-7%, 7%);
+    }
+    
+    100% {
+        transform: translate(0, 0);
+    }
+}

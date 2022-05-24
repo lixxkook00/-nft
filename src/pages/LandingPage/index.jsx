@@ -1,7 +1,9 @@
 import React ,{useRef}from 'react'
 import './LandingPage.scss'
 
-import Header from '../../components/Header'
+import {Link} from 'react-router-dom'
+
+// import Header from '../../components/Header'
 import Footer  from '../../components/Footer'
 import ContentLandingPage from '../../components/ContentLandingPage'
 
@@ -63,10 +65,11 @@ export default function LandingPage({isLoading}) {
                                 <div className="header-nav-item">
                                   Whitepaper
                                 </div>
-                                <div className="header-nav-item">
+                                <Link to={"/market-place"} className="header-nav-item">
                                   Marketplace
-                                </div>
+                                </Link>
                             </div>
+
                         </div>
                     </div>
                 </div>

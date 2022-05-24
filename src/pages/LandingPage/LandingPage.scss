@@ -4,3 +4,59 @@
     background-color: $primary-blue;
     position: relative;
 }
+
+@import '../../scss/variables';
+
+
+.header-wrap{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $primary-blue;
+    box-shadow: 0 5px 13px 24px $primary-blue;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    color: $white;
+    height: 120px;
+    font-size: 19px;
+    font-weight: 600;
+    padding-top: 5px;
+    justify-content: space-between;
+    background-color: $primary-blue;
+
+    &-logo{
+        height: 100%;
+
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &-nav-list{
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+        // padding-right: 50px;
+    }
+
+    &-nav-item{
+        text-align: center;
+        padding: 16px 20px;
+        min-width: 170px;
+        border: 3px solid $primary-blue;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            border: 3px solid $primary-orange;
+            color: $primary-orange;
+            border-radius: $border-radius;
+        }
+    }
+}

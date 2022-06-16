@@ -46,7 +46,6 @@ export default function Header({executeScroll}) {
                                     )
                                 })
                             }
-                            
                         </div>
                     </div>
                 </div>

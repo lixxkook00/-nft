@@ -1,0 +1,119 @@
+@import '../../scss/variables';
+
+:root {
+    --border-color: #47bca0;
+    --signup-text-color: #C2C2C2;
+}
+
+.signup {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../public/images/web.png");
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    width: 500px;
+    margin: auto;
+    position: relative;
+
+}
+
+.signup-container img{
+    width: 100%;
+}
+
+.form-container {
+    width: 100%;
+    position: absolute;
+    top: 22%;
+    margin: auto;
+}
+
+.input-container {
+    width: 60%;
+    height: 70px;
+    margin: auto;
+}
+
+.input-container input {
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    color: var(--signup-text-color);
+    background-color: unset;
+    outline: none;
+    border: 3px solid var(--border-color);
+    border-radius: 20px;
+}
+
+.btn-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: unset
+}
+
+.signup-btn {
+    width: 40%;
+    background-color: unset;
+    border: none;
+    outline: unset;
+    transition: all .5s ease;
+}
+
+.signup-btn:hover {
+    cursor: pointer;
+    width: 50%;
+}
+
+.signup-btn:focus{
+    outline: 0;
+}
+
+.navigate {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.navigate-btn {
+    text-align: center;
+    padding: 16px 20px;
+    min-width: 170px;
+    border: 3px solid #0b0a3a;
+    transition: all 0.3s ease-in-out;
+    color: var(--border-color);
+    
+    &:hover {
+        cursor: pointer;
+        border: 3px solid $primary-orange;
+        color: $primary-orange;
+        border-radius: $border-radius;
+            }
+}
+
+@media (max-width: 500px) {
+    .signup {
+        padding: 0 10px;
+    }
+    .form-container {
+        top: 14%;
+    }
+    .input-container {
+        width: 90%;
+    }
+    .signup-btn {
+        width: 60%;
+    }
+    .signup-btn:hover {
+        width: 65%;
+    }
+}

@@ -91,6 +91,9 @@
     border: 3px solid #0b0a3a;
     transition: all 0.3s ease-in-out;
     color: var(--border-color);
+    border: 3px solid var(--border-color);
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     
     &:hover {
         cursor: pointer;

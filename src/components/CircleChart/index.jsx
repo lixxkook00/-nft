@@ -7,7 +7,7 @@ export default function CircleChart() {
 
     const options = {
         animationEnabled: true,
-        backgroundColor: "#0c205c",
+        backgroundColor: "tranparent",
         data: [{
             type: "doughnut",
             showInLegend: false,

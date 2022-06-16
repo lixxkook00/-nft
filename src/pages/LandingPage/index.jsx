@@ -68,6 +68,9 @@ export default function LandingPage({isLoading}) {
                                 <Link to={"/market-place"} className="header-nav-item">
                                   Marketplace
                                 </Link>
+                                <Link to={"/sign-up"} className="header-nav-item">
+                                  Sign Up
+                                </Link>
                             </div>
 
                         </div>

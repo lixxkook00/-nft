@@ -1,4 +1,5 @@
 import React from 'react'
+import './CircleChart.scss'
 
 import {CanvasJSChart} from 'canvasjs-react-charts'
 
@@ -7,7 +8,7 @@ export default function CircleChart() {
 
     const options = {
         animationEnabled: true,
-        backgroundColor: "tranparent",
+        backgroundColor: "#0c205c",
         data: [{
             type: "doughnut",
             showInLegend: false,
@@ -31,6 +32,7 @@ export default function CircleChart() {
     <div className="circhart">
         <CanvasJSChart options = {options}
         />
+        <div className="free"></div>
     </div>
   )
 }

@@ -1,0 +1,12 @@
+.circhart{
+    position: relative;
+
+    .free{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 40px;
+        width: 200px;
+        background-color: #0c205c;
+    }
+}

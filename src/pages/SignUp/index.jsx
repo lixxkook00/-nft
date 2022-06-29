@@ -4,6 +4,8 @@ import "./SignUp.scss"
 import "../../components/Header/Header.scss"
 import Validate from '../../components/Validate'
 import { useEffect } from 'react'
+import { connectWallet } from '../../utils/connectWallet'
+import { signUpAccount } from '../../api/signup'
 
 
 const SignUp = () => {
@@ -26,18 +28,22 @@ const SignUp = () => {
   const checkUsername = () => {
       if(username.length === 0){
         setUsernameError("can not be empty!") 
+        return false;
       }
       else if(username.length < 8 || username.length > 16){
         setUsernameError("must have 8 - 16 characters!")
+        return false;
       }
       else {
         setUsernameError("")
+        return true;
       }
   }
 
   const checkEmail = () => {
     if(email.length === 0){
         setEmailError("can not be empty!") 
+        return false;
       }
     else {
       if(!String(email)
@@ -46,9 +52,11 @@ const SignUp = () => {
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     )){
       setEmailError("is invalid")
+      return false;
       }
       else {
         setEmailError("")
+        return true
       }
     }
     
@@ -59,26 +67,66 @@ const SignUp = () => {
   const checkPassword = () => {
     if(password.length === 0) {
       setPasswordError("can not be empty!")
+      return false;
     }
     else if(!String(password).match(/^[A-Za-z0-9 ]+$/)){
       setPasswordError("must not include special characters!")
+      return false;
     }
     else {
       setPasswordError("")
+      return true;
     }
   }
 
   const checkConfirm = () => {
     if (confirm.length === 0) {
       setConfirmError("can not be empty!")
+      return false;
     }
     else if (confirm !== password){
-      setConfirmError("must match to password")
+      setConfirmError("must match to password");
+      return false;
     }
     else {
-      setConfirmError("")
+      setConfirmError("");
+      return true;
     }
   }
+
+  const signup =async () => { 
+    if(!window.ethereum) { 
+        alert('You need install metamask !');
+        window.open("https://metamask.io/");
+    }
+    else if (!window.ethereum.selectedAddress) { 
+      alert("You need login Metamask first !!!");
+      await connectWallet();
+    }
+    else {
+      if( checkUsername()
+      && checkEmail()
+      && checkPassword()
+      && checkConfirm() 
+      ) { 
+        const data = { 
+          username: username,
+          email: email,
+          password: password,
+          wallet: window.ethereum.selectedAddress
+        }
+        const status = await signUpAccount(data);
+        if(status == true) { 
+          alert('Signup Successfully !');
+        }
+        else { 
+          alert('wrong !!!');
+        }
+      }
+    }
+  }
+
+
 
   useEffect(() => {
     window.addEventListener("resize", ()=>{
@@ -111,7 +159,7 @@ const SignUp = () => {
 
                 </div>
                 <div className="input-container">
-                    <input type="text" value={refcode} placeholder='Enter your ref code' onChange={(e)=>setRefcode(e.target.value)}/>
+                    <input type="text"  placeholder={window.ethereum ? window.ethereum.selectedAddress || "Wallet address" : "You need login/install metamask first !" } disabled />
                 </div>
             </div>
             <div className="btn-container">
@@ -120,6 +168,7 @@ const SignUp = () => {
                 checkEmail()
                 checkPassword()
                 checkConfirm()
+                signup()
               }}>
                 <img src="/images/button web.png" alt="" />
               </button>
